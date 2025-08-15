@@ -1,21 +1,21 @@
 # Setup the Model
-
+A lot of files/scripts are useful only when runnig evaluation on the refcoco dataset, the link to the repository for that has been provided in Step 5.
 ### Follow the steps given below:
 
 1. **Clone the repository (xyz)**:
    ```bash
-   git clone https://github.com/yourusername/xyz.git
+   git clone https://github.com/Shreyansh-100/REC_task
    ```
 
 2. **Setup a conda environment** in your terminal:
    ```bash
-   conda create -n env_name
-   conda activate env_name
+   conda create -n mdetr_env
+   conda activate mdetr env
    ```
 
 3. **Enter the local repository**:
    ```bash
-   cd xyz
+   cd mdetr
    ```
 
 4. **Run the command to install the necessary requisites**:
@@ -27,10 +27,16 @@
    [Evaluation Steps](https://github.com/ashkamath/mdetr/blob/main/.github/refexp.md) it will be prefferable if you did that, setupt the json's as mentioned in the above steps (link has been attached).
 
 6. **Pre-trained model checkpoint**:  
-   After cloning the repository, you will find the pre-trained model checkpoint available in the directory:  
+   After cloning the repository, you will find the pre-trained model checkpoint available in the directory,once you download it from the link attached: [Checkpoint](https://zenodo.org/record/4721981/files/refcoco_resnet101_checkpoint.pth?download=1)
+   
+   Ensure the the directory looks like
    ```bash
-   /Checkpoint/
+
+   /Checkpoint/<checkpoint-name>.pth
    ```
+
+   Ensure to change the checkpoint path in the inference.py script to run locally.
+   
 
 7. **Run the command to perform inference on your own image and query**:
    ```bash

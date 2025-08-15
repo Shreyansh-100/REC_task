@@ -23,5 +23,5 @@ This repository contains the necessary scripts and datasets to use the pre-train
 2. Implementation uses MDETR with ResNet101 backbone fine-tuned on RefCOCO dataset.
 
 ## Note
-This repository is maintained for academic and submission purposes. It will be archived after the completion of the intended project.
 
+**This repository is maintained for academic and submission purposes. It will be archived after the completion of the intended project.**
