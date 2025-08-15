@@ -5,7 +5,7 @@ from torchvision import transforms
 import matplotlib.pyplot as plt
 from hubconf import mdetr_resnet101_refcoco
 def run_inference(image_path, query, checkpoint_path, conf_threshold=0.9):
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu") #Loading the GPU if available, otherwise CPU
     model, postprocessor = mdetr_resnet101_refcoco(pretrained=False, return_postprocessor=True)
     checkpoint = torch.load(checkpoint_path, map_location=device)
     model.load_state_dict(checkpoint["model"])
@@ -69,4 +69,3 @@ if __name__ == "__main__":
         query=input_query(),
         checkpoint_path="/home/shreyansh/mdetr/Checkpoint/refcoco_resnet101_checkpoint.pth"
     )
-

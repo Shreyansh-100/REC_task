@@ -1,5 +1,11 @@
 # Setup the Model
 A lot of files/scripts are useful only when runnig evaluation on the refcoco dataset, the link to the repository for that has been provided in Step 5.
+
+Note:- If setting up GPU, run the following command in CMD locally to check the CUDA version and GPU functionality. (This is for a nvidia based GPU)
+   ```
+      nvidia-smi    
+   ``` 
+---
 ### Follow the steps given below:
 
 1. **Clone the repository (xyz)**:
